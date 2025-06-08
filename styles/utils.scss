@@ -1,0 +1,80 @@
+@use './variables.scss' as *;
+
+/* ✅ 布局相关 */
+.w-full { width: 100%; }
+.flex { display: flex; }
+.grid { display: grid; }
+.items-center { align-items: center; }
+.items-start { align-items: flex-start; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+
+/* ✅ 圆角/边框 */
+.rounded { border-radius: 8rpx; }
+.rounded-lg { border-radius: $radius-lg; }
+.rounded-full { border-radius: 9999rpx; }
+.border { border-width: 1rpx; }
+.border-gray-300 { border-color: #d1d5db; }
+.border-blue-200 { border-color: #bfdbfe; }
+.border-red-200 { border-color: #fecaca; }
+.border-yellow-200 { border-color: #fef08a; }
+
+/* ✅ 阴影 */
+.shadow-lg { box-shadow: 0 8rpx 20rpx rgba(0, 0, 0, 0.06); }
+
+/* ✅ 字体与颜色 */
+.text-center { text-align: center; }
+.text-white { color: #ffffff; }
+.text-gray-500 { color: #6b7280; }
+.text-gray-700 { color: #374151; }
+.text-gray-900 { color: #111827; }
+.text-blue-700 { color: #1d4ed8; }
+.text-red-800 { color: #991b1b; }
+.text-F52E6B { color: $color-primary; }
+
+.text-sm { font-size: 26rpx; }
+.text-lg { font-size: 32rpx; }
+.text-2xl { font-size: 40rpx; }
+.font-bold { font-weight: 700; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+
+/* ✅ 间距 */
+.p-3 { padding: 12rpx; }
+.p-4 { padding: 16rpx; }
+.p-6 { padding: 24rpx; }
+.px-2 { padding-left: 8rpx; padding-right: 8rpx; }
+.px-4 { padding-left: 16rpx; padding-right: 16rpx; }
+.py-3 { padding-top: 12rpx; padding-bottom: 12rpx; }
+.py-8 { padding-top: 32rpx; padding-bottom: 32rpx; }
+.mb-4 { margin-bottom: 16rpx; }
+.mb-6 { margin-bottom: 24rpx; }
+.mb-8 { margin-bottom: 32rpx; }
+.mt-6 { margin-top: 24rpx; }
+.ml-2 { margin-left: 8rpx; }
+
+/* ✅ 背景色 */
+.bg-white { background-color: #ffffff; }
+.bg-gray-50 { background-color: #f9fafb; }
+.bg-blue-50 { background-color: #eff6ff; }
+.bg-red-50 { background-color: #fef2f2; }
+.bg-yellow-50 { background-color: #fffbeb; }
+.bg-F52E6B { background-color: $color-primary; }
+.bg-opacity-20 { background-color: rgba(255, 255, 255, 0.2); }
+
+/* ✅ 宽度限制 */
+.max-w-4xl { max-width: 960rpx; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+
+/* ✅ 按钮通用 */
+.transition-colors {
+  transition: background-color 0.3s ease;
+}
+.hover-bg-FE6587:hover {
+  background-color: $color-primary-hover;
+}
+.disabled-opacity-50:disabled {
+  opacity: 0.5;
+}
