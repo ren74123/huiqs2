@@ -1,0 +1,5 @@
+<view class="privacy-container">
+  <scroll-view scroll-y class="content" style="height: 100vh; padding: 24rpx;">
+    <rich-text nodes="{{markdownContent}}" />
+  </scroll-view>
+</view>
