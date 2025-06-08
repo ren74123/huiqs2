@@ -1,0 +1,56 @@
+{
+  "name": "huiqisheng",
+  "version": "1.0.0",
+  "private": true,
+  "description": "用户定制旅行线路",
+  "scripts": {
+    "dev": "taro build --type weapp --watch",
+    "build": "taro build --type weapp",
+    "clean": "rm -rf dist",
+    "tailwind:init": "tailwindcss init -p",
+    "build:npm": "taro build --type weapp && taro build --plugin npm"
+  },
+  "dependencies": {
+    "@eslint/eslintrc": "^2.1.4",
+    "less": "^4.0.0",
+    "marked": "^15.0.12",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^7.6.2",
+    "supports-hyperlinks": "^4.1.0",
+    "wxbuf": "github:laivv/wxbuf"
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.27.1",
+    "@babel/preset-react": "^7.27.1",
+    "@tarojs/cli": "^4.0.12",
+    "@tarojs/components": "^4.0.12",
+    "@tarojs/plugin-framework-react": "^4.0.12",
+    "@tarojs/plugin-platform-weapp": "^4.1.1",
+    "@tarojs/react": "^4.0.12",
+    "@tarojs/runtime": "^4.0.12",
+    "@tarojs/taro": "^4.0.12",
+    "@tarojs/vite-runner": "^4.0.12",
+    "@vitejs/plugin-react": "^4.4.1",
+    "autoprefixer": "^10.4.21",
+    "babel-preset-taro": "^4.1.1",
+    "eslint": "^8.56.0",
+    "eslint-config-taro": "^4.0.12",
+    "postcss": "^8.5.4",
+    "postcss-import": "^16.1.0",
+    "postcss-nesting": "^13.0.1",
+    "postcss-preset-env": "^10.2.0",
+    "sass": "^1.89.0",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^4.5.5",
+    "vite": "^4.5.14",
+    "vite-plugin-markdown": "^2.2.0"
+  },
+  "packageManager": "yarn@1.22.22"
+}

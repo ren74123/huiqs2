@@ -1,0 +1,15 @@
+/* 全局基础样式：不再使用 Tailwind */
+@use './styles/utils.scss';
+/* 调试样式 */
+.debug-red {
+  background-color: #ef4444; // 替代 bg-red-500
+  color: #ffffff;
+  padding: 16rpx;
+  border-radius: 8rpx;
+}
+
+/* 小程序页面默认样式 */
+page {
+  background-color: #ffffff;
+  font-size: 32rpx;
+}
