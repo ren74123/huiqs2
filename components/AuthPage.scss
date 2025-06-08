@@ -1,0 +1,215 @@
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30rpx);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #f52e6b, #ff6b6b);
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .auth-header {
+    padding-top: 120rpx;
+    text-align: center;
+    color: white;
+    animation: fadeInUp 0.5s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo-container {
+      width: 250rpx;
+      height: 250rpx;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      margin: 0 auto 32rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .logo-image {
+        width: 220rpx;
+        height: 220rpx;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .auth-title {
+      font-size: 52rpx;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12rpx;
+      letter-spacing: 2rpx;
+    }
+
+    .auth-subtitle {
+      font-size: 30rpx;
+      color: rgba(255, 255, 255, 0.85);
+      letter-spacing: 1rpx;
+      margin-top: 8rpx;
+    }
+  }
+
+  .auth-container {
+    margin-top: 90rpx;
+    background: #ffffff;
+    border-top-left-radius: 48rpx;
+    border-top-right-radius: 48rpx;
+    padding: 60rpx 40rpx 90rpx;
+    box-shadow: 0 -10rpx 30rpx rgba(0, 0, 0, 0.05);
+    animation: fadeInUp 0.6s ease-out;
+
+    .auth-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 32rpx;
+      margin-bottom: 60rpx;
+
+      .login-btn {
+        height: 90rpx;
+        line-height: 90rpx;
+        font-size: 34rpx;
+        border-radius: 44rpx;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &.wechat-btn {
+          background-color: #1aad19;
+          color: #fff;
+          font-weight: bold;
+        }
+
+        &.phone-btn {
+          background-color: #fff;
+          color: #000;
+          border: 1rpx solid #ccc;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .phone-login-container,
+    .verify-container {
+      margin-top: 40rpx;
+      animation: fadeInUp 0.5s ease-out;
+
+      .input-group {
+        display: flex;
+        margin-bottom: 32rpx;
+        gap: 20rpx;
+
+        .input {
+          flex: 1;
+          height: 80rpx;
+          padding: 0 30rpx;
+          border: 1rpx solid #e5e5e5;
+          border-radius: 44rpx;
+          font-size: 32rpx;
+          background: #f8f8f8;
+        }
+
+        .send-code-btn {
+          width: 200rpx;
+          height: 80rpx;
+          line-height: 80rpx;
+          border-radius: 44rpx;
+          font-size: 28rpx;
+          background-color: #1aad19;
+          color: white;
+          font-weight: bold;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      .verify-btn {
+        width: 100%;
+        height: 90rpx;
+        line-height: 90rpx;
+        border-radius: 44rpx;
+        font-size: 34rpx;
+        background-color: #1aad19;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 32rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .agreement-area {
+      text-align: center;
+      font-size: 24rpx;
+      color: #999;
+
+      .agreement-checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20rpx;
+
+        checkbox {
+          transform: scale(0.8);
+          margin-right: 12rpx;
+        }
+      }
+
+      .agreement-links {
+        font-size: 26rpx;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .link {
+          color: #35c14a;
+          padding: 0 6rpx;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .auth-footer {
+      text-align: center;
+      margin-top: 40rpx;
+      font-size: 24rpx;
+      color: #999;
+    }
+
+    .error-msg-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 10rpx 0 20rpx;
+    }
+
+    .error-msg {
+      color: #ff4d4f;
+      font-size: 26rpx;
+      animation: fadeInUp 0.3s ease-out;
+    }
+
+    .back-link {
+      font-size: 28rpx;
+      color: #666;
+      margin-top: 20rpx;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,72 @@
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  text-align: center;
+
+  &.lg {
+    font-size: 16px;
+    min-height: 48px;
+  }
+
+  &.sm {
+    font-size: 14px;
+    min-height: 36px;
+    padding: 8px 16px;
+  }
+
+  &.default {
+    background-color: #1890ff;
+    color: white;
+    border: none;
+
+    &:active {
+      background-color: #096dd9;
+    }
+  }
+
+  &.wechat {
+    background-color: #07C160;
+    color: white;
+    border: none;
+
+    &:active {
+      background-color: #05a84e;
+    }
+  }
+
+  &.outline {
+    background-color: transparent;
+    color: #1890ff;
+    border: 1px solid #1890ff;
+
+    &:active {
+      color: #096dd9;
+      border-color: #096dd9;
+    }
+  }
+
+  &.ghost {
+    background-color: transparent;
+    color: #666;
+    border: none;
+
+    &:active {
+      color: #333;
+    }
+  }
+
+  &.loading {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+
+  .loading-text {
+    margin-left: 8px;
+  }
+}
