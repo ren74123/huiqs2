@@ -1,0 +1,140 @@
+/* pages/travel-plan.scss */
+
+/* 页面布局 */
+.max-w-4xl { max-width: 960rpx; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.px-4 { padding-left: 32rpx; padding-right: 32rpx; }
+.py-8 { padding-top: 64rpx; padding-bottom: 64rpx; }
+
+/* 卡片容器 */
+.bg-white { background-color: #ffffff; }
+.rounded-lg { border-radius: 24rpx; }
+.shadow-lg { box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.05); }
+.p-6 { padding: 48rpx; }
+
+/* 标题 */
+.text-2xl { font-size: 44rpx; line-height: 1.4; }
+.font-bold { font-weight: 700; }
+.text-gray-900 { color: #1C2340; }
+.mb-8 { margin-bottom: 48rpx; }
+
+/* 积分区域 */
+.mb-6 { margin-bottom: 32rpx; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.bg-gray-50 { background-color: #f9fafb; }
+.p-4 { padding: 24rpx; }
+.text-gray-700 { color: #374151; }
+.text-sm { font-size: 26rpx; }
+.text-gray-500 { color: #6b7280; }
+.font-medium { font-weight: 500; }
+.text-F52E6B { color: #F52E6B; }
+
+/* 提示信息框 */
+.bg-blue-50 { background-color: #eff6ff; }
+.border { border-width: 1rpx; }
+.border-blue-200 { border-color: #bfdbfe; }
+.text-blue-700 { color: #1d4ed8; }
+.items-start { align-items: flex-start; }
+
+/* 表单项 */
+.space-y-4 > * + * { margin-top: 24rpx; }
+.relative { position: relative; }
+.w-full { width: 100%; }
+.p-3 { padding: 24rpx; }
+.rounded-lg { border-radius: 20rpx; }
+.border { border-width: 2rpx; border-color: #e5e7eb; }
+
+/* 自定义 input 样式 */
+.input {
+  width: 100%;
+  padding: 24rpx;
+  border: none;
+  border-radius: 0;
+  font-size: 28rpx;
+  background-color: transparent;
+}
+
+/* 偏好选择区域 */
+.text-lg { font-size: 32rpx; }
+.font-semibold { font-weight: 600; }
+.mb-4 { margin-bottom: 24rpx; }
+.block { display: block; }
+.grid { display: grid; }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.md-grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+.gap-3 { gap: 24rpx; }
+.space-x-2 > * + * { margin-left: 12rpx; }
+.rounded { border-radius: 12rpx; }
+.border-gray-300 { border-color: #d1d5db; }
+
+/* 偏好多选栅格布局 */
+.preference-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24rpx;
+}
+@media screen and (min-width: 768px) {
+  .md-grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 按钮 */
+.bg-F52E6B { background-color: #F52E6B; }
+.text-white { color: #ffffff; }
+.py-3 { padding-top: 24rpx; padding-bottom: 24rpx; }
+.mt-6 { margin-top: 48rpx; }
+.justify-center { justify-content: center; }
+.ml-2 { margin-left: 16rpx; }
+.bg-opacity-20 { background-color: rgba(255, 255, 255, 0.2); }
+.px-2 { padding-left: 16rpx; padding-right: 16rpx; }
+.py-0_5 { padding-top: 8rpx; padding-bottom: 8rpx; }
+.rounded-full { border-radius: 9999rpx; }
+
+/* 灰色禁用按钮状态 */
+.bg-gray-300 { background-color: #d1d5db; }
+.text-gray-500 { color: #6b7280; }
+.text-gray-400 { color: #9ca3af; }
+.submit-button.disabled {
+  background-color: #d1d5db;
+  color: #6b7280;
+  opacity: 0.8;
+}
+
+/* 补充信息提示样式 */
+.text-center { text-align: center; }
+.text-F52E6B:hover { color: #FE6587; cursor: pointer; }
+
+/* 图标文字居中 */
+.icon-label-row {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+  margin-bottom: 24rpx;
+  font-size: 28rpx;
+  color: #6b7280;
+}
+.icon-label-row .icon {
+  color: #F52E6B;
+  font-size: 28rpx;
+}
+
+/* 表单容器垂直间距 */
+.form-group > * + * {
+  margin-top: 24rpx;
+}
+
+/* 当前积分 flex bar */
+.travel-credit-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 8rpx;
+  padding: 24rpx;
+  font-size: 26rpx;
+  background-color: #f9fafb;
+  border-radius: 16rpx;
+}
